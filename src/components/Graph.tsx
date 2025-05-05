@@ -21,7 +21,7 @@ export const Graph: React.FC<Props> = ({ elements }) => {
         {
           selector: 'node',
           style: {
-            'background-color': '#f472b6', // pink-400
+            'background-color': '#f472b6',
             label: 'data(label)',
             color: '#fff',
             'font-size': 14,
@@ -33,18 +33,26 @@ export const Graph: React.FC<Props> = ({ elements }) => {
             width: 50,
             height: 50,
             'border-width': 2,
-            'border-color': '#ec4899', // pink-500
-            'shape': 'ellipse'
+            'border-color': '#ec4899',
+            shape: 'ellipse'
           },
         },
         {
           selector: 'edge',
           style: {
             width: 'mapData(weight, 1, 10, 1, 6)',
-            'line-color': '#f9a8d4', // pink-300
+            'line-color': '#f9a8d4',
             'target-arrow-color': '#f9a8d4',
             'target-arrow-shape': 'triangle',
-            'curve-style': 'bezier'
+            'curve-style': 'bezier',
+            'label': 'data(label)',
+            'font-size': 14,
+            'font-weight': 'bold',
+            'color': '#fce7f3',
+            'text-background-color': '#ec4899',
+            'text-background-opacity': 1,
+            'text-background-padding': '2px',
+            'text-margin-y': -10
           },
         },
       ],

@@ -12,11 +12,11 @@ export const getDummyElements = (): ElementDefinition[] => {
   ];
 
   const edges = [
-    { data: { source: 'takuma', target: 'natsuki', weight: 8 } },
-    { data: { source: 'takuma', target: 'yutaka', weight: 5 } },
-    { data: { source: 'natsuki', target: 'maki', weight: 7 } },
-    { data: { source: 'maki', target: 'toya', weight: 4 } },
-    { data: { source: 'shun', target: 'takuma', weight: 6 } },
+    { data: { source: 'takuma', target: 'natsuki', weight: 8, label: '💖' } },
+    { data: { source: 'takuma', target: 'yutaka', weight: 5, label: '💬' } },
+    { data: { source: 'natsuki', target: 'maki', weight: 7, label: '🎯' } },
+    { data: { source: 'maki', target: 'toya', weight: 4, label: '📣' } },
+    { data: { source: 'shun', target: 'takuma', weight: 6, label: '👀' } },
   ];
 
   return [...nodes, ...edges];
