@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Graph } from "@/components/Graph";
+// import { Graph } from "@/components/Graph";
 import { DebugLog } from "@/components/DebugLog";
 import { UploadForm } from "@/components/UploadForm";
 import { getDummyElements } from "@/lib/analyzer";
