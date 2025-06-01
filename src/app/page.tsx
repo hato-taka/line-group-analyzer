@@ -8,6 +8,7 @@ import { UploadForm } from "@/components/UploadForm";
 import { getDummyElements } from "@/lib/analyzer";
 import StampRateChart from "@/components/StampRateChart";
 import SilentKingChart from "@/components/SilentKingChart";
+import RelationshipGraph from "@/components/RelationshipGraph";
 
 export default function Home() {
   const [elements, setElements] = useState(getDummyElements());
@@ -33,6 +34,13 @@ export default function Home() {
       <h1 className="text-xl font-bold mb-4">沈黙の支配者</h1>
         <SilentKingChart />
       </div>
+
+      <div className="p-4">
+      <h1 className="text-xl font-bold mb-4">蜜LINE相関図</h1>
+        <RelationshipGraph />
+      </div>
+
+      
 
       <DebugLog data={JSON.stringify(elements, null, 2)} />
     </main>
