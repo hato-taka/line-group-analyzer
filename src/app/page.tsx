@@ -9,6 +9,7 @@ import { getDummyElements } from "@/lib/analyzer";
 import StampRateChart from "@/components/StampRateChart";
 import SilentKingChart from "@/components/SilentKingChart";
 import RelationshipGraph from "@/components/RelationshipGraph";
+import LiteraryAwardChart from "@/components/LiteraryAwardChart";
 
 export default function Home() {
   const [elements, setElements] = useState(getDummyElements());
@@ -31,16 +32,19 @@ export default function Home() {
       </div>
 
       <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">沈黙の支配者</h1>
+        <h1 className="text-xl font-bold mb-4">沈黙の支配者</h1>
         <SilentKingChart />
       </div>
 
       <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">蜜LINE相関図</h1>
+        <h1 className="text-xl font-bold mb-4">蜜LINE相関図</h1>
         <RelationshipGraph />
       </div>
 
-      
+      <div className="p-4">
+        <h1 className="text-xl font-bold mb-4">終わらないLINE文学賞</h1>
+        <LiteraryAwardChart />
+      </div>
 
       <DebugLog data={JSON.stringify(elements, null, 2)} />
     </main>
